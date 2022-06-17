@@ -57,7 +57,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**𝙷𝙴𝙻𝙻𝙾...⚡**\n\n**𝙸𝙰𝙼 𝙰 𝚂𝙸𝙼𝙿𝙻𝙴 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙵𝙸𝙻𝙴/𝚅𝙸𝙳𝙴𝙾 𝚃𝙾 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁 𝙱𝙾𝚃.**\n\n**𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶..\n\n𝚄𝚂𝙴 /help 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴 𝙳𝙴𝚃𝙰𝙸𝙻𝚂...\n\n𝚂𝙴𝙽𝙳 𝙼𝙴 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴 𝚃𝙾 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚉....**",
+            text="**HELLO...⚡**\n\n**I AM A SIMPLE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("🛠️ WEBSITE 🛠️", url="https://www.ishank.ml")],
@@ -228,10 +228,10 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔TFM-SERVER BOT〕</b>
 ┃
 ┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM-SERVER BOT</a></b>
-┣⪼<b>UPDATES : <a href='https://t.me/MWUpdatez'></a></b>
-┣⪼<b>SUPPORT : <a href='https://t.me/OpusTechz'>𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a></b>
-┣⪼<b>SERVER : 𝙷𝙴𝚁𝚄𝙺𝙾</b>
-┣⪼<b>LIBRARY : 𝙿𝚁𝙾𝙶𝚁𝙰𝙼</b>
+┣⪼<b>UPDATES : <a href='https://t.me/tfm_storage_server'>TFM•SERVER</a></b>
+┣⪼<b>SUPPORT : <a href='https://t.me/ishankkaushik'>CLICK HERE</a></b>
+┣⪼<b>SERVER : TFM VIP SERVER</b>
+┣⪼<b>LIBRARY : GCS</b>
 ┣⪼<b>LANGUAGE: 𝙿𝚈𝚃𝙷𝙾𝙽 3</b>
 ┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushim'>YOU HAVE TO BUY IT</a></b>
 ┣⪼<b>INSTAGRAM : <a href='https://instagram.com/its_ishank'>its_Ishank</a></b>
