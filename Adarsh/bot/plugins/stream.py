@@ -115,7 +115,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 
 
-<b>♻️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE ♻️\n\n@Ishank_Kaushik</b>"""
+<b>♻️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE ♻️\n\n@TFM_Server_Bot</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
