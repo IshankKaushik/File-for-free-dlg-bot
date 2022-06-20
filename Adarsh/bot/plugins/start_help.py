@@ -172,12 +172,12 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ FOR STREAMING JUST COPY THE LINK AND PASTE IT IN YOUR VIDEO PLAYER TO START STREAMING.\n\n ┣⪼ FOR MORE INFORMATION :- /about\n\n\nTHANKS FOR READING**", 
+        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ FOR STREAMING JUST COPY THE LINK AND PASTE IT IN YOUR VIDEO PLAYER TO START STREAMING.\n\n┣⪼ FOR MORE INFORMATION:- /about\n\n\nTHANKS FOR READING 😃**", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("🧑‍💻 DEVELOPER", url="https://t.me/ishank_kaushik")],
                
             ]
         )
@@ -240,7 +240,7 @@ async def about_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("🧑‍💻 DEVELOPER ", url="https://t.me/ishank_kaushik")],
                
             ]
         )
