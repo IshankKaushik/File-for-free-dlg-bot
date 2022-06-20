@@ -227,14 +227,14 @@ async def about_handler(bot, message):
         text="""<b>𝚂𝙾𝙼𝙴𝚃𝙷𝙸𝙽𝙶 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴</b>
 <b>╭━━━━━━━〔TFM-SERVER BOT〕</b>
 ┃
-┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a>
+┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a></b>
 ┣⪼<b>SUPPORT : <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
 ┣⪼<b>SERVER : GCS</b>
 ┣⪼<b>LANGUAGE: PYTHON 🐍</b>
 ┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
 ┣⪼<b>WEBSITE : <a href='https://www.ishank.ml'>CLICK HERE</a></b>
 ┃
-<b>╰━━━━━━━〔YOU HAVE TO TAKE PERMISSION TO USE THIS BOT 〕</b>""",
+<b>╰━━━━━━━〔YOU HAVE TO TAKE PERMISSION TO USE THIS BOT〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
