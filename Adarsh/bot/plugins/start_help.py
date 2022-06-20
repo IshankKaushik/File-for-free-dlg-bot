@@ -229,7 +229,7 @@ async def about_handler(bot, message):
 ┃
 ┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a></b>
 ┣⪼<b>SUPPORT : <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
-┣⪼<b>SERVER : </b>
+┣⪼<b>VERSION : 3.6.9.02</b>
 ┣⪼<b>SERVER : GCS</b>
 ┣⪼<b>LANGUAGE: PYTHON 🐍</b>
 ┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
