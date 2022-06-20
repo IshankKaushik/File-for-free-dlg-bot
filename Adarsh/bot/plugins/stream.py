@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n If You Have To Buy Key From @Ishank_Kaushik To Use Me \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me \n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -137,7 +137,7 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @agprojects")
+            await broadcast.reply_text("Login first using /login command \n don\'t know the password? request it from @Ishank_Kaushik")
             return
         if check_pass != MY_PASS:
             await broadcast.reply_text("Wrong password, login again")
