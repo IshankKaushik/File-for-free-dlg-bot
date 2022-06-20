@@ -60,7 +60,7 @@ async def start(b, m):
             text="**HELLO...⚡**\n\n**I AM A SIMPLE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("🛠️ WEBSITE 🛠️", url="https://www.ishank.ml")],
+                    [InlineKeyboardButton("DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
                    
                 ]
             ),
@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📧 FILE NAME :-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️\n\n@TFM_Server_Bot**"
+        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📂 FILE NAME:-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n⚠️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴\n\n ➖ @TFM_Server_Bot ➖**"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -229,6 +229,7 @@ async def about_handler(bot, message):
 ┃
 ┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a></b>
 ┣⪼<b>SUPPORT : <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
+┣⪼<b>SERVER : </b>
 ┣⪼<b>SERVER : GCS</b>
 ┣⪼<b>LANGUAGE: PYTHON 🐍</b>
 ┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
