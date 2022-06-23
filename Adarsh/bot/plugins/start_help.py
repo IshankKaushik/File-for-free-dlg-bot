@@ -60,8 +60,8 @@ async def start(b, m):
             text="**HELLO...⚡**\n\n**I AM A FREE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE FREE & DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY FREE POWERS 😅....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
-                   
+                    [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("PREMIUM BOT 🤖", url="https://t.me/tfm_server_bot")],
+                    [InlineKeyboardButton("🌐 WEBSITE 🌐", url="https://www.ishank.ml")]
                 ]
             ),
             disable_web_page_preview=True
