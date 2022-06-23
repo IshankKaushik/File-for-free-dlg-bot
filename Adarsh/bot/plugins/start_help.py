@@ -38,7 +38,7 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT..!**",
+                    text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS A FREE BOT, DUE TO LOAD ONLY CHANNEL SUBSCRIBERS CAN USE THIS BOT 🙂..!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -57,7 +57,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**HELLO...⚡**\n\n**I AM A SIMPLE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY POWERS 🪄....**",
+            text="**HELLO...⚡**\n\n**I AM A FREE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE FREE & DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY FREE POWERS 😅....**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("DEVELOPER", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("WEBSITE 🌐", url="https://www.ishank.ml")],
