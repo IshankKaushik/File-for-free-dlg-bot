@@ -57,10 +57,10 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**HELLO...⚡**\n\n**I AM A FREE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE FREE & DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY FREE POWERS 😅....**",
+            text="**HELLO FREEBIES 👋**\n\n**I AM A FREE TELEGRAM FILE/VIDEO TO PERMANENT LINK GENERATOR BOT.**\n\n**I CAN GENERATE FREE & DIRECT DOWNLOAD LINK FOR ANY VIDEO/FILES FOR DOWNLOADING ONLINE AND FOR STREAMING..\n\nUSE /help FOR MORE DETAILS...\n\nSEND ME ANY VIDEO/FILE TO SEE MY FREE POWERS 😅....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("PREMIUM BOT 🤖", url="https://t.me/tfm_server_bot")],
+                    [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik"), InlineKeyboardButton("💸 PREMIUM BOT 🤖", url="https://t.me/tfm_server_bot")],
                     [InlineKeyboardButton("🌐 WEBSITE 🌐", url="https://www.ishank.ml")]
                 ]
             ),
@@ -81,7 +81,7 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT..!**",
+                    text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT 🙂..!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -123,11 +123,11 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📂 FILE NAME:-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n⚠️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴\n\n ➖ @TFM_Server_Bot ➖**"
+        msg_text = "**YOUR LINK IS GENERATED...⚡\n\n📂 FILE NAME:-\n{}\n {}\n\n📥 DOWNLOAD LINK :- {}\n\n⚠️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴\n\n ➖ @File_to_Link_Generator_Robot ➖**"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙽𝙾𝚆 ⚡", url=stream_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("DOWNLOAD NOW 🥱", url=stream_link)]])
         )
 
 
@@ -153,11 +153,11 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT..!**",
+                text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS A FREE BOT, DUE TO LOAD ONLY CHANNEL SUBSCRIBERS CAN USE THIS BOT 🙂..!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("JOIN UPDATES CHANNEL.. (click here)", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("JOIN UPDATES CHANNEL (click here)..", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -172,12 +172,12 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ FOR STREAMING JUST COPY THE LINK AND PASTE IT IN YOUR VIDEO PLAYER TO START STREAMING.\n\n┣⪼ FOR MORE INFORMATION:- /about\n\n\nTHANKS FOR READING 😃**", 
+        text="**┣⪼ SEND ME ANY FILE/VIDEO THEN I WILL GIVE YOU A FREE PERMANENT SHAREABLE LINK OF IT...\n\n┣⪼ THIS BOT IS CREATE BY @Ishank_Kaushik\n\n┣⪼ THIS LINK CAN BE USED TO DOWNLOAD OR TO STREAM USING EXTERNAL VIDEO PLAYERS THROUGH MY SERVER.\n\n┣⪼ THIS BOT IS RUNNING ON FREE SERVER, SO DOWNLOAD SPEED MAY VARY.\n\n┣⪼ FOR MORE INFORMATION:- /about\n\n\nYou Are Using Free Bot, If You Want To Use Premium Bot For Fastest Speed.. Contact:- @Ishank_Kaushik**", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("🧑‍💻 DEVELOPER 🧑‍💻", url="https://t.me/ishank_kaushik")],[InlineKeyboardButton("🌐 WEBSITE 🌐", url="https://www.ishank.ml")],
                
             ]
         )
@@ -205,7 +205,7 @@ async def about_handler(bot, message):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT..!**",
+                text="**JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS A FREE BOT, DUE TO LOAD ONLY CHANNEL SUBSCRIBERS CAN USE THIS BOT 🙂..!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -224,23 +224,21 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""<b>𝚂𝙾𝙼𝙴𝚃𝙷𝙸𝙽𝙶 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴</b>
-<b>╭━━━━━━━〔TFM-SERVER BOT〕</b>
+        text="""<b>SOMETHING ABOUT ME</b>
+<b>╭━━━━━━━〔@File_to_Link_Generator_Robot〕</b>
 ┃
-┣⪼<b>BOT-NAME : <a href='https://t.me/tfm_server_bot'>TFM_Server_Bot</a></b>
-┣⪼<b>SUPPORT : <a href='https://t.me/ishank_kaushik'>CLICK HERE</a></b>
-┣⪼<b>VERSION : 3.6.9.02</b>
-┣⪼<b>SERVER : GCS</b>
-┣⪼<b>LANGUAGE: PYTHON 🐍</b>
-┣⪼<b>SOURCE-CODE : <a href='https://t.me/ishank_kaushik/chat'>CLICK HERE</a></b>
+┣⪼<b>BOT-NAME: <a href='https://t.me/File_to_Link_Generator_Robot'>File_to_Link</a></b>
+┣⪼<b>SUPPORT: <a href='https://t.me/Public_Discussion'>click here</a></b>
+┣⪼<b>VERSION: 69 🌚</b>
+┣⪼<b>CREATOR: <a href='https://t.me/ishank_kaushik/chat'>Ishank Kaushik</a></b>
 ┣⪼<b>WEBSITE : <a href='https://www.ishank.ml'>CLICK HERE</a></b>
 ┃
-<b>╰━━━━━━━〔YOU HAVE TO TAKE PERMISSION TO USE THIS BOT〕</b>""",
+<b>╰━━━━━━━〔This is a Free Bot, By @Ishank_Kaushik〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🧑‍💻 DEVELOPER ", url="https://t.me/ishank_kaushik")],
+                [InlineKeyboardButton("🧑‍💻 DEVELOPER 🪄", url="https://t.me/ishank_kaushik")],[InlineKeyboardButton("💸 PREMIUM BOT 🤖", url="https://t.me/tfm_server_bot")],
                
             ]
         )
