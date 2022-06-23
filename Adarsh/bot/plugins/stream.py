@@ -24,7 +24,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n\n You Have To Buy Key From @Ishank_Kaushik To Use Me \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("OH.. YOU ARE USING FREE BOT 😅\n\n\nYOU DON'T HAVE TO ENTER PASSWORD TO USE FREE BOT\n\n(So, Please Press /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -34,13 +34,13 @@ async def login_handler(c: Client, m: Message):
             else:
                 return
         except TimeoutError:
-            await ag.edit("I can't wait more for password, try again")
+            await ag.edit("YOU DON'T HAVE TO ENTER THE PASSWORD IN FREE BOT")
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
-            ag_text = "yeah! you entered the password correctly"
+            ag_text = "YOU DON'T HAVE TO ENTER THE PASSWORD IN FREE BOT"
         else:
-            ag_text = "Wrong password, try again"
+            ag_text = "YOU DON'T HAVE TO ENTER THE PASSWORD IN FREE BOT"
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @ishank_kaushik")
+            await m.reply_text("YOU DON'T HAVE TO ENTER THE PASSWORD IN FREE BOT")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -75,11 +75,11 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="""<i>JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS VIP BOT, ONLY VIP CHANNEL SUBSCRIBERS CAN USE THIS BOT..!</i>""",
+                text="""<i>JOIN MY UPDATES CHANNEL TO USE ME..**\n\n**THIS IS A FREE BOT, DUE TO LOAD ONLY CHANNEL SUBSCRIBERS CAN USE THIS BOT..!</i>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("JOIN UPDATES CHANNEL.. (click here)", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("JOIN UPDATES CHANNEL (click here)..", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -107,15 +107,15 @@ async def private_receive_handler(c: Client, m: Message):
         msg_text ="""
 <b>YOUR LINK IS GENERATED...⚡
 
-<b>📧 FILE NAME :- </b> <i><b>{}</b></i>
+<b>📂 FILE NAME :- </b> <i><b>{}</b></i>
 
-<b>📦 FILE SIZE :- </b> <i><b>{}</b></i>
+<b>🗄️ FILE SIZE :- </b> <i><b>{}</b></i>
 
 <b>📥 DOWNLOAD LINK :- </b> <i><b>{}</b></i>
 
 
 
-<b>♻️ THIS LINK IS PERMANENT AND WILL NOT EXPIRE ♻️\n\n@TFM_Server_Bot</b>"""
+<b>🙂 THIS LINK IS FREE & PERMANENT AND WILL NOT EXPIRE 🙂\n\n ➖ @File_to_Link_Generator_Robot ➖</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
@@ -123,8 +123,8 @@ async def private_receive_handler(c: Client, m: Message):
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ WATCH ⚡", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('⚡ DOWNLOAD ⚡', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("WATCH 🥱", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('DOWNLOAD 🥱', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -160,8 +160,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ WATCH ⚡", url=stream_link),
-                     InlineKeyboardButton('⚡ DOWNLOAD ⚡', url=online_link)] 
+                    [InlineKeyboardButton("WATCH 🥱", url=stream_link),
+                     InlineKeyboardButton('DOWNLOAD 🥱', url=online_link)] 
                 ]
             )
         )
